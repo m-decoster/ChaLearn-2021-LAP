@@ -41,7 +41,7 @@ I recommend you create a virtual environment and install the dependencies using:
 ```bash
 python3 -m venv .env
 source .env/bin/activate
-pip install -r requirements.txt
+pip install -r src/requirements.txt
 ```
 
 ### Hardware
