@@ -41,6 +41,7 @@ I recommend you create a virtual environment and install the dependencies using:
 ```bash
 python3 -m venv .env
 source .env/bin/activate
+pip install --upgrade pip   # Make sure you have the latest version of pip
 pip install -r src/requirements.txt
 ```
 
