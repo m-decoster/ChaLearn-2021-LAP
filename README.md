@@ -87,7 +87,11 @@ Place the corresponding MP4 files there. They can be found on the [competition w
 These directories will also be created under `kp` and `kpflow2` when the corresponding
 feature extraction code is executed. You do not need to manually create them.
 
-Finally, run the `count_frames.py` script.
+Finally, run the `count_frames.py` script with as argument the path to the `mp4` directory, e.g.,
+
+```bash
+python count_frames.py -i project/data/mp4
+```
 
 Your dataset is now prepared to either extract the keypoint files yourself, or use the ones provided by us.
 
