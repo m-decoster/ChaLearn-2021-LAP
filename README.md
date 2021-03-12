@@ -30,7 +30,7 @@ This code base has following dependencies:
 
 - Python 3.8.5
 - PyTorch 1.7.1
-- Torchvision 0.8.2+ with PyAV 8.0.2
+- Torchvision 0.8.2 with PyAV 8.0.2
 - PyTorch Lightning 1.1.1
 - OpenCV-Python 4.3.0.36
 
@@ -66,6 +66,12 @@ project/data/kp
 project/data/kpflow2
 ```
 
+This can be done using the command
+
+```bash
+mkdir -p project/data/{mp4,kp,kpflow2}
+```
+
 Copy the CSV files from the `data/` directory in this repository to the `project/` directory.
 These are the prediction templates and the label files.
 See also `data/README.md` for more information.
@@ -76,7 +82,7 @@ Create a `train`, `val` and `test` directory under `project/data/mp4`.
 mkdir -p project/data/mp4/{train,val,test}
 ```
 
-Place the corresponding MP4 files there.
+Place the corresponding MP4 files there. They can be found on the [competition website](http://chalearnlap.cvc.uab.es/dataset/40/description/#).
 
 These directories will also be created under `kp` and `kpflow2` when the corresponding
 feature extraction code is executed. You do not need to manually create them.
@@ -183,7 +189,7 @@ After training and re-training, you should have a checkpoint file at `$CHECKPOIN
 ```bash
 python -m predict --log_dir $LOG_DIR --model $MODEL --dataset $DATASET --num_workers $NUM_WORKERS \
     --data_dir $DATA_DIR --sequence_length 16 --temporal_stride 2 --learning_rate 1e-4 \
-    --gradient_clip_val=1 --gpus 1 --cnn rn34 --num_layers 4 --num_heads 8 --max_epochs $NUM_EPOCHS \
+    --gpus 1 --cnn rn34 --num_layers 4 --num_heads 8 --max_epochs $NUM_EPOCHS \
     --checkpoint=$CHECKPOINT_PATH --submission_template $PREDICTION_TEMPLATE --out predictions.csv \
     --batch_size 4
 ```
