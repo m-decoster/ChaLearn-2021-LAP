@@ -3,7 +3,7 @@ torchvision==0.8.2
 pytorch-lightning==1.1.1
 optuna==2.3.0
 opencv-python==4.3.0.36
-opencv-python-headless==4.4.0.46
+opencv-python-headless==4.3.0.46
 av==8.0.2
 wget==3.2
 zsvision==0.6.18
