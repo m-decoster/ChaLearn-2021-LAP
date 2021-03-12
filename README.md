@@ -188,7 +188,7 @@ python -m train --log_dir $LOG_DIR --model VTN_HCPF_D --dataset handcrop_poseflo
 
 The `predict.py` script can be used. This requires an additional prediction template file provided by the challenge organizers. We will assume this file exists at `$PREDICTION_TEMPLATE`.
 
-After training and re-training, you should have a checkpoint file at `$CHECKPOINT_PATH`. You can predict using
+After training, you should have a checkpoint file at `$CHECKPOINT_PATH`. You can predict using
 
 ```bash
 python -m predict --log_dir $LOG_DIR --model $MODEL --dataset $DATASET --num_workers $NUM_WORKERS \
