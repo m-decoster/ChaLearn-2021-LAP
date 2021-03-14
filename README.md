@@ -1,6 +1,6 @@
 # ChaLearn 2021 LAP
 
-This repository contains the code of my submission to the ChaLearn 2021 Looking At People: Signer Independent Isolated Sign Language Recognition challenge.
+This repository contains the code of my submission to the [ChaLearn 2021 Looking At People: Signer Independent Isolated Sign Language Recognition challenge](http://chalearnlap.cvc.uab.es/challenge/43/description/).
 
 | Track | Development Score | Test Score |
 |-------|-------------------|------------|
