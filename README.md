@@ -209,3 +209,18 @@ This repository also provides prediction files for the models on both the valida
 ## LICENCE
 
 This code is available under the MIT licence (see LICENCE). Part of the code base is based on the Intel OpenVINO toolkit (see LICENCE\_OPENVINO).
+
+## Citation
+
+If you found this code useful, please consider citing this paper:
+
+```
+@InProceedings{De_Coster_2021_CVPR,
+    author    = {De Coster, Mathieu and Van Herreweghe, Mieke and Dambre, Joni},
+    title     = {Isolated Sign Recognition From RGB Video Using Pose Flow and Self-Attention},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2021},
+    pages     = {3441-3450}
+}
+```
