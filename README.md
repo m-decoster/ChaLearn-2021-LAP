@@ -90,7 +90,7 @@ feature extraction code is executed. You do not need to manually create them.
 Finally, run the `count_frames.py` script with as argument the path to the `mp4` directory, e.g.,
 
 ```bash
-python count_frames.py -i project/data/mp4
+python count_frames.py --input_dir project/data/mp4
 ```
 
 Your dataset is now prepared to either extract the keypoint files yourself, or use the ones provided by us.
